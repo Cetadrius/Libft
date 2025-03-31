@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 
-LIBFT_PATH = ./libft/libft
+LIBFT_PATH = ./libft
 SRCS	= $(addprefix $(LIBFT_PATH)/, ft_isalpha.c \
 		ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		ft_isprint.c ft_strlen.c ft_memset.c \
