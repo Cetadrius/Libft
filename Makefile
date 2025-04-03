@@ -6,7 +6,7 @@
 #    By: afilipe- <afilipe-@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 12:53:35 by afilipe-          #+#    #+#              #
-#    Updated: 2025/03/31 11:41:24 by afilipe-         ###   ########.fr        #
+#    Updated: 2025/04/03 11:39:53 by afilipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,32 +26,35 @@ SRCS	= $(addprefix $(LIBFT_PATH)/, ft_isalpha.c \
 		ft_putnbr_fd.c ft_strdup.c ft_calloc.c)
 
 PRINTF_PATH = ./ft_printf
-PRINTF_SOURCES = $(addprefix $(PRINTF_PATH)/, *.c)
+PRINTF = $(addprefix $(PRINTF_PATH)/, fi_itoa_printf \
+		ft_print_auxft.c ft_printc.c ft_printf.c \
+		ft_printhex.c ft_printnbr.c ft_printpoint.c \
+		ft_printstr.c ft_printunsig.c ft_strdup_printf.c \
+		ft_strlen_printf.c ft_util.c)
 
 GNL_PATH = ./get_next_line
-GNL_SOURCES = $(addprefix $(GNL_PATH)/, *.c)
+GNL = $(addprefix $(GNL_PATH)/ get_next_line.c \
+		get_next_line_utils.c)
 
-OBJS	= ${SRCS:.c=.o}
-OBJS_PRINTF	= ${PRINTF_SOURCES:.c=.o}
-OBJS_GNL	= ${GNL_SOURCES:.c=.o}
 CC		= cc
 RM		= rm -f
 CFLAGS		= -Wall -Wextra -Werror
 
-
+OBJS = ${SRCS:.c=.o}
 NAME		= libft.a
 
 all:		$(NAME)
 
-$(NAME):	$(OBJS) $(OBJS_GNL) $(OBJS_PRINTF)
-			ar rcs $(NAME) $(OBJS) $(OBJS_GNL) $(OBJS_PRINTF)
+
+$(NAME):	$(OBJS) 
+			ar rcs $(NAME) $(OBJS) 
 
 clean:			
-		$(RM) $(OBJS)
+		$(RM) $(OBJS) 
 
 fclean:	clean
-		$(RM) $(NAME)
+				$(RM) $(NAME)
 		
-re:		fclean $(NAME)
+re:		fclean all
 
 .PHONY:		all clean fclean re

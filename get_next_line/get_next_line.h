@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afilipe- <afilipe-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: afilipe- <afilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 11:11:57 by afilipe-          #+#    #+#             */
-/*   Updated: 2024/11/27 11:04:51 by afilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/03 10:38:32 by afilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,8 @@ int		ft_strlen_gnl(char *str);
 char	*ft_bufferjoin(char *str1, char *str2);
 char	*ft_strchr_cust(const char *str, int c);
 char	*ft_strndup(char *str, int len);
+static char	*ft_to_arch(int fd, char *archive);
+static char	*ft_from_arc(char *archive);
+static char	*ft_housekeeping(char *archive);
 
 #endif

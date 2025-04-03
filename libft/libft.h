@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afilipe- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: afilipe- <afilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:25:27 by afilipe-          #+#    #+#             */
-/*   Updated: 2024/10/23 11:25:31 by afilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/03 11:45:40 by afilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 # include <stdio.h>
 # include <limits.h>
 # include <stdint.h>
-# include "../get_next_line/get_next_line.h"
-# include "../ft_printf/ft_printf.h"
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
