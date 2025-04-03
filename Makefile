@@ -45,7 +45,7 @@ GNL = $(addprefix $(GNL_PATH)/, get_next_line.c get_next_line_utils.c)
 # Compiler and flags
 CC = cc
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 # Object files from all the sources
 OBJS = ${SRCS:.c=.o} ${PRINTF:.c=.o} ${GNL:.c=.o}
