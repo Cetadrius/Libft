@@ -45,7 +45,7 @@ char	*ft_bufferjoin(char *str1, char *str2)
 		str1 = malloc(sizeof(char));
 		str1[0] = '\0';
 	}
-	size = ft_strlen(str1) + ft_strlen(str2);
+	size = ft_strlen_gnl(str1) + ft_strlen_gnl(str2);
 	newstr = malloc(sizeof(char *) * (size + 1));
 	if (!newstr)
 		return (0);

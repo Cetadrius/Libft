@@ -6,7 +6,7 @@
 #    By: afilipe- <afilipe-@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 12:53:35 by afilipe-          #+#    #+#              #
-#    Updated: 2025/04/03 11:39:53 by afilipe-         ###   ########.fr        #
+#    Updated: 2025/04/03 12:06:42 by afilipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,21 +26,21 @@ SRCS	= $(addprefix $(LIBFT_PATH)/, ft_isalpha.c \
 		ft_putnbr_fd.c ft_strdup.c ft_calloc.c)
 
 PRINTF_PATH = ./ft_printf
-PRINTF = $(addprefix $(PRINTF_PATH)/, fi_itoa_printf \
+PRINTF = $(addprefix $(PRINTF_PATH)/, ft_itoa_printf.c \
 		ft_print_auxft.c ft_printc.c ft_printf.c \
 		ft_printhex.c ft_printnbr.c ft_printpoint.c \
 		ft_printstr.c ft_printunsig.c ft_strdup_printf.c \
 		ft_strlen_printf.c ft_util.c)
 
 GNL_PATH = ./get_next_line
-GNL = $(addprefix $(GNL_PATH)/ get_next_line.c \
-		get_next_line_utils.c)
+GNL		 = get_next_line/get_next_line.c \
+			get_next_line/get_next_line_utils.c
 
 CC		= cc
 RM		= rm -f
 CFLAGS		= -Wall -Wextra -Werror
 
-OBJS = ${SRCS:.c=.o}
+OBJS = ${SRCS:.c=.o} ${PRINTF:.c=.o} ${GNL:.c=.o}
 NAME		= libft.a
 
 all:		$(NAME)

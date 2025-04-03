@@ -90,7 +90,7 @@ static char	*ft_housekeeping(char *archive)
 		free(archive);
 		return (NULL);
 	}
-	left = malloc(sizeof(char) * (ft_strlen(archive) - i + 1));
+	left = malloc(sizeof(char) * (ft_strlen_gnl(archive) - i + 1));
 	if (!left)
 	{
 		free(left);

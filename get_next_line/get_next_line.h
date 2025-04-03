@@ -31,8 +31,5 @@ int		ft_strlen_gnl(char *str);
 char	*ft_bufferjoin(char *str1, char *str2);
 char	*ft_strchr_cust(const char *str, int c);
 char	*ft_strndup(char *str, int len);
-static char	*ft_to_arch(int fd, char *archive);
-static char	*ft_from_arc(char *archive);
-static char	*ft_housekeeping(char *archive);
 
 #endif
