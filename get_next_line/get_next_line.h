@@ -6,7 +6,7 @@
 /*   By: afilipe- <afilipe-@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 11:11:57 by afilipe-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:38:32 by afilipe-         ###   ########.fr       */
+/*   Updated: 2025/04/11 14:21:02 by afilipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 # include <stdio.h>
 # include <stdarg.h>
 # include <fcntl.h>
-
 
 char	*get_next_line(int fd);
 
